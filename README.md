@@ -16,10 +16,11 @@ Edit: change appd.cfg file with your controller creds and details
 
 Step 2: cf step and do login as define in https://docs.pivotal.io/partners/appdynamics/using.html
 
-Step 3: Note: Python agent buildpack do not support cflinuxfs3 at this point. To fix this
+Step 3: Note: Python agent buildpack do not support cflinuxfs3 at this point. To fix this run
 ```
 cf buildpacks | grep python
 ```
+and choose something other as cflinuxfs3, that listed under the command output.
 
 Step 4: Push to cloud with https://github.com/Appdynamics/python-buildpack as buildpack
 ```
