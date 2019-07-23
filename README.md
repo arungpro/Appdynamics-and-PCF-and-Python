@@ -37,6 +37,7 @@ Step 5: Create a user provided service to auto-discover the AppDynamics agent
 cf create-user-provided-service appdynamics-python -p "host-name,port,ssl-enabled,account-name,account-access-key,application-name,tier-name,node-name"
  ```
  Enter details like hostname, port, Acc Name etc as added in Step 1.
+ Note: If you are using Appdynamics tiles. You can skip this step.
  
 Step 6: Bind the service with the app name
 ```
