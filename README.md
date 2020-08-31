@@ -31,8 +31,6 @@ Note: my-python-app is my pcf specific <app_name>.
 Step 5: Create a user provided service to auto-discover the AppDynamics agent
 
         NOTE: Using cups based approach. One can use Appdynamics tiles, But its out of scope of this demo. 
-        Also, When creating AppDynamics service, using a user-provided service, it must have name prefixed with appdynamics
-        I m using `appdynamics-python` as my service name.
  ```
 cf create-user-provided-service appdynamics-python -p "host-name,port,ssl-enabled,account-name,account-access-key,application-name,tier-name,node-name"
  ```
